@@ -9,11 +9,10 @@ API_KEY = os.getenv("mx0vglwO1s1a7Nchqd")
 SECRET_KEY = os.getenv("d35a5ab19444481c976d0761aa3ddd5e")
 
 exchange = ccxt.mexc({
-    'apiKey': mx0vglwO1s1a7Nchqd,
-    'secret': d35a5ab19444481c976d0761aa3ddd5e,
+    'apiKey': os.getenv("mx0vglwO1s1a7Nchqd"),
+    'secret': os.getenv("d35a5ab19444481c976d0761aa3ddd5e"),
     'enableRateLimit': True
 })
-
 symbol = 'ETH/USDC'
 timeframe = '1m'
 limit = 200
